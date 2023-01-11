@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bitter&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <div class="contenedor__universal">
+        <header class="header">
+            <a href="#">
+                <img src="../img/logo-patagonia.jpg" alt="Logo de mi empresa" width="200">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__ul">
+                    <li class="header__li">
+                        <a href="../index.html" class="header__anchor">Inicio</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="productos.html" class="header__anchor">Productos</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="sucursales.html" class="header__anchor">Sucursales</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="quienes-somos.html" class="header__anchor">Quiénes Somos</a>
+                    </li>
+                    <li class="header__li">
+                        <a href="#" class="header__anchor">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="main__contacto">
+                <div class="main__formulario">
+                    <form action="#" method="get" enctype="multipart/form-data">
+                        <div class="main__formulario--items">
+                            <label for="Nombre" id="Nombre">Nombre y apellido</label>
+                            <input type="text" name="Nombre" id="Nombre">
+                        </div>
+                        <div class="main__formulario--items">
+                            <label for="Email" id="Email">Correo electrónico</label>
+                            <input type="email" name="Email" id="Email">
+                        </div>
+                        <div class="main__formulario--items">
+                            <label for="Consulta" id="Consulta">Consulta</label>
+                            <textarea name="Consulta" id="Consulta" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="main__formulario--items">
+                            <input type="reset" value="Limpiar campos">
+                            <input type="submit" value="Enviar consulta">
+                        </div>
+                    </form>
+                </div>
+                <div class="main__form--img">
+                    <img src="../img/img-form.jpg" alt="img-form" width="400px">
+                </div>
+        
+        </main>
+
+        <footer class="footer">
+            <img src="../img/facebook.png" alt="facebook" width="75" class="footer__redes">
+            <img src="../img/twitter.png" alt="twitter" width="75" class="footer__redes">
+            <img src="../img/whatsapp.png" alt="whatsapp" width="75" class="footer__redes">
+        </footer>
+    </div>
+</body>
+</html>

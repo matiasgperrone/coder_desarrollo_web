@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    background-color: #0B610B;
+}
+.contenedor__universal{
+display: grid;
+grid-template-rows: auto 1fr auto;
+}
+
+p, label, input{
+    font-family: bitter;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: oswald;
+}
+
+.header{
+    background-color: white;
+    padding: 1rem 1rem;
+    display: flex;
+}
+
+.header__nav{
+    width: 100%;
+}
+
+.header__ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__li{
+    font-size: 2rem;
+    list-style: none;
+}
+
+.header__anchor{
+    text-decoration: none;
+    color: black;
+    font-family: oswald;
+}
+
+.main{
+    background-color: #0B610B;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+}
+
+.main__video{
+    display: flex;
+    justify-content: center;
+    margin: ;
+}
+
+.main__publicidad{
+    display: flex;
+    align-items: center;
+    margin: 30px;
+}
+
+.main__publicidad--imagen{
+    width: 700px
+}
+
+.main__texto{
+    font-family: ;
+    padding: 3rem;
+    color: black;
+}
+
+.main__titulo{
+    text-decoration: solid;
+    text-align: center;
+    color: black;
+}
+
+.footer{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+
+.footer__redes{
+    padding: 0.5rem;
+}
+
+
+
+
+
+.main__productos{
+    padding: 2rem 1rem;
+    background-color: #0B610B;
+}
+
+.main__productos--imagen{
+display: flex;
+justify-content: center;
+}
+
+.main__descripcion{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.main__cervezas{
+    width: 30rem;
+    padding: 2rem;
+}
+
+.main__cervezas--titulo{
+    text-align: center;
+}
+
+
+
+.main__sucursales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #0B610B;
+}
+
+.main__sucursales--columna{
+    width: 30rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+
+.main__sucursales--titulo{
+    text-align: center;
+}
+
+
+
+.main__quienes-somos{
+    background-color: #0B610B;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+.main__quienes-somos--imagen{
+    padding: 2rem;
+}
+
+.main__quienes-somos--texto{
+    padding: 2rem;
+    width: 30rem;
+}
+
+
+.main__contacto{
+    background-color: #0B610B;
+    height: 50rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main__formulario{
+    padding: 2rem;
+}
+
+
+.main__formulario--items{
+    width: 30rem;
+    text-align: center;
+}
+
+.main__form--img{
+    padding: 2rem;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 425px) {
+    .header{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header__ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main{
+        align-items: center;
+    }
+
+    .main__video{
+        width: 50%;
+        margin: 30px;
+    }
+
+    .main__publicidad{
+        flex-direction: column;
+    }
+
+    .main__publicidad--imagen{
+        width: 300px
+    }
+}
+
