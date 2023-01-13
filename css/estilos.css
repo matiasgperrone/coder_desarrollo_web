@@ -74,8 +74,11 @@ h1, h2, h3, h4, h5, h6{
     width: 700px
 }
 
+.main__div {
+        text-align: center;
+}
+
 .main__texto{
-    font-family: ;
     padding: 3rem;
     color: black;
 }
@@ -112,6 +115,10 @@ display: flex;
 justify-content: center;
 }
 
+.main__productos--imagen_tamanio {
+    width: 700px;
+}
+
 .main__descripcion{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -119,7 +126,9 @@ justify-content: center;
 
 .main__cervezas{
     width: 30rem;
-    padding: 2rem;
+    text-align: center;
+    margin-top: 15px;
+    padding: 10px;
 }
 
 .main__cervezas--titulo{
@@ -153,15 +162,21 @@ justify-content: center;
 display: flex;
 justify-content: space-around;
 align-items: center;
+padding: 30px;
 }
 
-.main__quienes-somos--imagen{
-    padding: 2rem;
+.main__quienes-somos--imagen-tamanio{
+    width: 500px;
 }
+
 
 .main__quienes-somos--texto{
-    padding: 2rem;
+    padding: 0rem 2rem;
     width: 30rem;
+}
+
+.main__parrafo{
+    margin-top: 60px;
 }
 
 
@@ -215,6 +230,19 @@ align-items: center;
     .main__publicidad--imagen {
         width: 100%;
     }
+
+    .main__descripcion{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main__productos--imagen_tamanio {
+        width: 500px;
+    }
+
+    .main__cervezas {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 426px) {
@@ -257,6 +285,42 @@ align-items: center;
     .main__texto {
         padding: 1rem;
         text-align: center;
+    }
+
+    .main__descripcion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main__productos--imagen_tamanio {
+        width: 100%;
+    }
+
+    .main__cervezas {
+        text-align: center;
+        margin-top: 15px;
+        padding: 10px;
+        width: 100%;
+    }
+
+
+
+    .main__quienes-somos{
+        flex-direction: column;
+    }
+
+    .main__quienes-somos--imagen {
+        margin-bottom: 30px;
+    }
+
+    .main__quienes-somos--imagen-tamanio{
+        width: 100%;
+    }
+
+    .main__quienes-somos--texto{
+        text-align: center;
+        width: 100%;
     }
 
 }
