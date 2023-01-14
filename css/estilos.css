@@ -51,6 +51,14 @@ h1, h2, h3, h4, h5, h6{
     color: black;
     font-family: oswald;
     font-size: 25px;
+    transform: scale(1);
+    transition: transform 2s;
+}
+
+.header__anchor:hover{
+    transform: scale(1.3);
+    color: #0B610B;
+    border-bottom: solid 5px #0B610B;
 }
 
 .main{
@@ -95,18 +103,6 @@ h1, h2, h3, h4, h5, h6{
     color: black;
 }
 
-.footer{
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-}
-
-
-.footer__redes{
-    padding: 0.5rem;
-}
-
 
 
 
@@ -143,6 +139,7 @@ justify-content: center;
 
 
 
+
 .main__sucursales{
     display: flex;
     flex-wrap: wrap;
@@ -164,6 +161,8 @@ justify-content: center;
 .ul__navbar{
     justify-content: space-around;
     }
+
+
 
 
 .main__quienes-somos{
@@ -214,25 +213,64 @@ padding: 30px;
 }
 
 
+.footer{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
 
+
+.footer__redes{
+    padding: 0.5rem;
+    transform: scale(1);
+    transition: transform 2s;
+}
+
+.footer__redes:hover{
+    transform: scale(1.3);
+}
 
 
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 1024px) {
     
+    .header__anchor:hover{
+        transform: none;
+        color: black;
+        border-bottom: none;
+    }
 
     .main__publicidad {
         flex-direction: column;
     }
 
+    .main__descripcion{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main__quienes-somos--imagen-tamanio {
+        width: 100%;
+    }
+
     .main__titulo {
         margin-top: 20px;
     }
+
+    .footer__redes:hover{
+        transform: none;
+    }
+
 }
 
 @media screen and (max-width: 769px) {
 
+    .header__anchor:hover{
+        transform: none;
+        color: black;
+        border-bottom: none;
+    }
 
     .header__li {
         font-size: 20px;
@@ -258,6 +296,14 @@ padding: 30px;
     .main__cervezas {
         width: 100%;
     }
+
+    .main__quienes-somos{
+        flex-direction: column;
+    }
+
+    .footer__redes:hover{
+        transform: none;
+    }
 }
 
 @media screen and (max-width: 426px) {
@@ -266,6 +312,7 @@ padding: 30px;
         align-items: center;
     }
 
+    
     .header__logo{
         width: 120px;
     }
@@ -273,6 +320,12 @@ padding: 30px;
     .header__ul{
         flex-direction: column;
         align-items: center;
+    }
+
+    .header__anchor:hover{
+        transform: none;
+        color: black;
+        border-bottom: none;
     }
 
     .main{
@@ -325,6 +378,11 @@ padding: 30px;
 
 
 
+    .main__sucursales--columna{
+        width: 100%;
+    }
+
+
     .main__quienes-somos{
         flex-direction: column;
     }
@@ -353,5 +411,8 @@ padding: 30px;
         margin-bottom: 30px;
     }
 
+    .footer__redes:hover{
+        transform: none;
+    }
 }
 

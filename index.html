@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bitter&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,28 +20,29 @@
                     <a href="#">
                         <img src="../img/logo-patagonia.jpg" alt="Logo de mi empresa" class="header__logo">
                     </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse w-100 text-center" id="navbarNav">
-                    <ul class="navbar-nav w-100 ul__navbar">
-                    <li class="nav-item">
-                        <a class="nav-link header__anchor" aria-current="page" href="#">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link header__anchor" href="./vistas/productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link header__anchor" href="./vistas/sucursales.html">Sucursales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link header__anchor" href="./vistas/quienes-somos.html">Quiénes somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link header__anchor" href="./vistas/contacto.html">Contacto</a>
-                    </li>
-                    </ul>
-                </div>
+                    </button>
+
+                    <div class="collapse navbar-collapse w-100 text-center" id="navbarNav">
+                        <ul class="navbar-nav w-100 ul__navbar">
+                            <li class="nav-item">
+                                <a class="nav-link header__anchor" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header__anchor" href="./vistas/productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header__anchor" href="./vistas/sucursales.html">Sucursales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header__anchor" href="./vistas/quienes-somos.html">Quiénes somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header__anchor" href="./vistas/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
@@ -50,12 +53,12 @@
             </div>
 
             <div class="main__publicidad">
-                <img src="./img/vera-ipa-index.jpg" alt="vera-ipa" class="main__publicidad--imagen">
+                <img src="./img/vera-ipa-index.jpg" alt="vera-ipa" class="main__publicidad--imagen" data-aos="zoom-in">
 
                 <div class="main__div">
-                    <h3 class="main__titulo">PROBÁ VERA IPA</h3>
+                    <h3 class="main__titulo" data-aos="zoom-in">PROBÁ VERA IPA</h3>
                 
-                    <p class="main__texto">Te invitamos a probar nuestra nueva variedad Vera Ipa, compuesta con malta Pale ale, Múnich, Trigo malteado, caramber y avena.
+                    <p class="main__texto" data-aos="zoom-in">Te invitamos a probar nuestra nueva variedad Vera Ipa, compuesta con malta Pale ale, Múnich, Trigo malteado, caramber y avena.
                         De un color dorado profundo, espuma blanca persistente y opalescencia característica.
                         Su aroma es frutal, herbal, cítrico. Balanceado hacia el lúpulo proveniente de la malta.
                         Sabor muy suave lupulado en hervor que le da un amargor bajo, con intenso de sabor cítrico y a frutas tropicales, gracias al agregado de lúpulos aromáticos en Dry Hopping. De cuerpo medio y muy refrescante.
@@ -70,11 +73,23 @@
         </div>    
         
         <footer class="footer">
+            <a href="#">
                 <img src="./img/facebook.png" alt="facebook" width="75" class="footer__redes">
+            </a>
+            <a href="#">
                 <img src="./img/twitter.png" alt="twitter" width="75" class="footer__redes">
+            </a>
+            <a href="#">
                 <img src="./img/whatsapp.png" alt="whatsapp" width="75" class="footer__redes">
+            </a>
         </footer>
     </div>
+    <script>
+        AOS.init({
+            once: true,
+        }           
+        );
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bitter&family=Oswald:wght@500;700&display=swap" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,46 +20,47 @@
                     <a href="#">
                         <img src="../img/logo-patagonia.jpg" alt="Logo de mi empresa" class="header__logo">
                     </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse w-100 text-center" id="navbarNav">
-                    <ul class="navbar-nav w-100 ul__navbar">
-                    <li class="nav-item">
-                        <a class="nav-link header__anchor" aria-current="page" href="../index.html">Inicio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link header__anchor" href="./productos.html">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link header__anchor" href="#">Sucursales</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link header__anchor" href="./quienes-somos.html">Quiénes somos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link header__anchor" href="./contacto.html">Contacto</a>
-                    </li>
-                    </ul>
-                </div>
+                    </button>
+
+                    <div class="collapse navbar-collapse w-100 text-center" id="navbarNav">
+                        <ul class="navbar-nav w-100 ul__navbar">
+                            <li class="nav-item">
+                                <a class="nav-link header__anchor" aria-current="page" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header__anchor" href="./productos.html">Productos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header__anchor" href="#">Sucursales</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header__anchor" href="./quienes-somos.html">Quiénes somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link header__anchor" href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </header>
 
         <main class="main__sucursales">
-                <div class="main__sucursales--columna">
+                <div class="main__sucursales--columna" data-aos="zoom-in">
                     <img src="../img/bariloche.jpg" alt="sucursal-bariloche" width="95%">
                     <h2 class="main__sucursales--titulo">BARILOCHE</h2>
                     <p>Vení a conocer nuestra microcervecería, ubicada en el kilómetro 24.7 de Circuito Chico.</p>
                 </div>
                 
-                <div class="main__sucursales--columna">
+                <div class="main__sucursales--columna" data-aos="zoom-in">
                     <img src="../img/buenos-aires.jpg" alt="sucursal-buenos-aires" width="95%">
                     <h2 class="main__sucursales--titulo">BUENOS AIRES</h2>
                     <p>Te invitamos a nuestra sucursal en la capital del país, ubicada en Corrales Viejos 20, de Parque Patricios.</p>
                 </div>
                 
-                <div class="main__sucursales--columna">
+                <div class="main__sucursales--columna" data-aos="zoom-in">
                     <img src="../img/santa-fe.jpg" alt="sucursal-santa-fe" width="95%">
                     <h2 class="main__sucursales--titulo">SANTA FE</h2>
                     <p>Conocé nuestro refugio más reciente, ubicado en Bv. Pellegrini 2421, dentro de la ciudad de la cerveza.</p>
@@ -66,11 +69,22 @@
 
         
         <footer class="footer">
-            <img src="../img/facebook.png" alt="facebook" width="75" class="footer__redes">
-            <img src="../img/twitter.png" alt="twitter" width="75" class="footer__redes">
-            <img src="../img/whatsapp.png" alt="whatsapp" width="75" class="footer__redes">
+            <a href="#">
+                <img src="../img/facebook.png" alt="facebook" width="75" class="footer__redes">
+            </a>
+            <a href="#">
+                <img src="../img/twitter.png" alt="twitter" width="75" class="footer__redes">
+            </a>
+            <a href="#">
+                <img src="../img/whatsapp.png" alt="whatsapp" width="75" class="footer__redes">
+            </a>
         </footer>
     </div>
+    <script>
+        AOS.init({
+            once: true,
+        });
+      </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>
 </html>
