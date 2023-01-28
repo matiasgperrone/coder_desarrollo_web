@@ -1,0 +1,26 @@
+.main__productos{
+    padding: 2rem 1rem;
+    background-color: #0B610B;
+
+    &--imagen{
+        display: flex;
+    justify-content: center;
+
+        &_tamanio{
+            width: 700px;
+        }
+    }
+
+    &--descripcion{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        &-cervezas{
+            width: 30rem;
+            text-align: center;
+            margin-top: 15px;
+            padding: 10px;
+        }
+    }
+}
+

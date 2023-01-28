@@ -1,0 +1,16 @@
+.main__qs{
+    background-color: #0B610B;
+display: flex;
+justify-content: space-around;
+align-items: center;
+padding: 30px;
+
+    &--imagen{
+        width: 500px;
+    }
+
+    &--texto{
+        padding: 0rem 2rem;
+        width: 30rem;
+    }
+}

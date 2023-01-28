@@ -1,0 +1,13 @@
+
+.main__sucursales{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: #0B610B;
+
+    &--columna{
+        width: 30rem;
+        padding: 2rem;
+        text-align: center;
+    }
+}
