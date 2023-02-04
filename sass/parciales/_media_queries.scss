@@ -47,13 +47,9 @@
         width: 100%;
     }
 
-    .main__productos--descripcion{
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
 
     .main__productos--imagen_tamanio {
-        width: 500px;
+        width: 90%;
     }
 
     .main__productos--descripcion-cervezas {
@@ -100,9 +96,7 @@
         height: 100%;
     }
 
-    .main__video--tamanio{
-            width: 100%;
-    }
+
 
     .main__publicidad{
         flex-direction: column;
@@ -141,9 +135,6 @@
 
 
 
-    .main__sucursales--columna{
-        width: 100%;
-    }
 
 
     .main__qs{
@@ -174,5 +165,24 @@
     .footer__redes:hover{
         transform: none;
     }
+}
+
+@media screen and (max-width: 500px) {
+    // movemos esto aca a un nuevo breakpoint para evitar el scroll horizontal en la pantalla de sucursales
+    .main__sucursales--columna{
+        width: 100%;
+    }
+
+    
+}
+
+
+@media screen and (max-width: 660px) {
+    // movemos esto aca a un nuevo breakpoint para evitar el scroll horizontal en la pantalla de home
+    .main__video--tamanio{
+        width: 100%;
+    }
+
+    
 }
 

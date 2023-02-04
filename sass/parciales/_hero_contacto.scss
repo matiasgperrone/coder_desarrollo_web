@@ -2,8 +2,10 @@
     background-color: #0B610B;
     padding: 60px 0px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
 
     &--img{
         width: 400px;
