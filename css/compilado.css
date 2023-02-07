@@ -76,7 +76,6 @@ h1, h2, h3, h4, h5, h6 {
     flex-wrap: wrap;
     justify-content: center; }
     .main__productos--descripcion-cervezas {
-      width: 30rem;
       text-align: center;
       margin-top: 15px;
       padding: 10px; }
@@ -162,8 +161,6 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%; }
   .main__productos--imagen_tamanio {
     width: 90%; }
-  .main__productos--descripcion-cervezas {
-    width: 100%; }
   .main__qs {
     flex-direction: column; }
   .footer__redes:hover {
@@ -206,8 +203,7 @@ h1, h2, h3, h4, h5, h6 {
   .main__productos--descripcion-cervezas {
     text-align: center;
     margin-top: 15px;
-    padding: 10px;
-    width: 100%; }
+    padding: 10px; }
   .main__qs {
     flex-direction: column; }
   .main__qs--imagen {
