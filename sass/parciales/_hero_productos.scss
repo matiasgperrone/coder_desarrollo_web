@@ -12,15 +12,13 @@
     }
 
     &--descripcion{
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
 
         &-cervezas{
             text-align: center;
             margin-top: 15px;
             padding: 10px;
-            width: 30%;
         }
     }
 }
